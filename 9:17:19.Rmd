@@ -42,7 +42,13 @@ skimr::skim(litters_data)
 library(readxl)
 mlb11_data = read_excel("data_import_examples/mlb11.xlsx", n_max = 20)
 head(mlb11_data, 5)
-```
+
+#Read in SAS
+
+library(haven)
+pulse_data = read_sas("./data_import_examples/public_pulse_data.sas7bdat")
+head(pulse_data, 5)
+view```
 skimr::skim(litters_data)
 
 ## Including Plots
